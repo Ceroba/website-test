@@ -1,0 +1,207 @@
+:read-only{
+	--text: #1e1801;
+	--background: #fff7e4;
+	--primary: #fed43f;
+	--secondary: #caf86f;
+	--accent: #9ff753;
+}
+*{
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	color: var(--text);
+	list-style-type: none;
+}
+@keyframes cool {
+    from{
+        background-position-x: 0px;
+    }
+    to{
+        background-position-x: 10000px;
+
+    }
+}
+
+.fancy{
+
+    color: linear-gradient(
+        to right,
+		var(--primary),
+		var(--accent),
+		var(--primary)
+    );
+    text-shadow: 0px 0px black 20px;
+    background: linear-gradient(
+        to right,
+		var(--primary),
+		var(--accent),
+		var(--primary)
+    );
+    animation: cool 100s linear infinite;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    white-space: nowrap;
+}
+img{
+	user-select: none;
+	 -webkit-user-drag: none
+}
+body {
+	padding: 0px;
+	margin: 0px;
+	background-color: var(--background);
+	overflow-x: hidden;
+}
+#nav-menu{
+	display: flex;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+}
+.nav-button{
+	font-size: medium;
+	background-color: var(--primary);
+	margin: 10px;
+	border: none;
+	height: 50px;
+	width:	7.5rem;
+}
+#workwithme-button{
+	font-size: medium;
+	margin-top: 1rem;
+	border: none;
+	height: 50px;
+	width: 150px;
+	background-color: var(--primary);
+}
+#hero{
+	margin-top: 5rem;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+#hero > #main-title{
+	margin: auto;
+	width: 40%;
+	font-size: xx-large;
+}
+#hero > #sub-title{
+	margin: auto;
+	font-size: medium;
+}
+#hero > #scene5{
+	padding: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	rotate: -20deg;
+	width: 450px;  /* original width */
+	height: 675px; /* original height */
+	z-index: -1;
+  	/* background-image: url('./../assets/scenery/scene5.jpg'); */
+  	background-size: contain;
+  	background-repeat: no-repeat;
+
+  	/* transform: scale(0.125); */
+  	/* transform-origin: top left; */
+}
+#hero > #scene8{
+	padding: 0;
+	position: absolute;
+	top: 170px;
+	right: 0px;
+	rotate: -5deg;
+	
+	z-index: -1;
+  	/* background-image: url('./../assets/scenery/scene5.jpg'); */
+  	background-size: contain;
+  	background-repeat: no-repeat;
+
+  	transform: scale(0.125);
+  	transform-origin: top right;
+}
+.arrow{
+	position: absolute;
+	padding: 0;
+	z-index: -1;
+	background-size: contain;
+	background-repeat: no-repeat;
+
+}
+#hero > #arrow1{
+	top: 180px;
+	left: 400px;	
+}
+#projects-gallary{
+
+	margin-top: 25rem;
+	margin-bottom: 3rem;
+}
+button:hover{
+	scale: 1.05;
+	transition: 100ms;
+}
+#img-track{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	left: 50%;
+	/* transform: translate(-0%, 0%); */
+	gap: 4vmin;
+}
+.gallary-img{
+	/* margin-left: 10px;
+	margin-right: 10px; */
+	height: 50vmin;
+	width: 35vmin;
+	object-fit: cover;
+	object-position: 100% 50%;
+}
+#my-work-header{
+	margin-bottom: 5rem;
+	display: flex;
+	justify-content: center;
+	font-size: xx-large;
+}
+.ink-stroke{
+	position: absolute;
+	z-index: -1;
+	left: 50%;
+	transform: scale(0.25);
+	transform: translate(-50%, -45%);
+	
+}
+#footing{
+	padding-top: 1rem;
+	background-color: var(--secondary);
+	display:flex;
+	justify-content: space-evenly;
+	/* align-content: space-between; */
+}
+#i-worked-with-header{
+	font-size: x-large;
+}
+#awards-header{
+	font-size: x-large;
+}
+#Social-Media-header{
+	font-size: x-large;
+}
+.header{
+	margin-bottom: 0.5rem;
+	text-align: left;
+	display: block;
+	font-size: xx-large;
+}
+#about-me{
+	display: flex;
+	align-items: center;
+	gap: 5rem;
+	flex-direction: column;
+}
+.sector{
+	text-align: center;
+	width: 20%;
+}
+.content{
+	font-size: large;
+}
